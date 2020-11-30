@@ -30,7 +30,7 @@ X_test_scaled = scaler.transform(X_test)
 
 logreg = LogisticRegression()
 
-param_grid = {'C': [0.001, 0.01, 0.1, 1, 5, 10, 20, 50, 100]}
+param_grid = {'C': [0.001, 0.01, 0.1, 1, 5, 10, 20, 50]}
 
 clf = GridSearchCV(logreg,
                    param_grid=param_grid,
